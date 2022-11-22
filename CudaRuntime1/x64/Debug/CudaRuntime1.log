@@ -1,0 +1,10 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Ronri\source\repos\Entrega\CudaRuntime1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\x64\Debug\kernel.cu.obj "C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\kernel.cu" 
+C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\kernel.cu(133): error : a __host__ function("desplazarAbajo") redeclared with __global__
+  
+C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\kernel.cu(159): warning #550-D: variable "props" was set but never used
+  
+  1 error detected in the compilation of "C:/Users/Ronri/source/repos/Entrega/CudaRuntime1/kernel.cu".
+  kernel.cu
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\CUDA 11.6.targets(790,9): error MSB3721: El comando ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\x64\Debug\kernel.cu.obj "C:\Users\Ronri\source\repos\Entrega\CudaRuntime1\kernel.cu"" salió con el código 1.
